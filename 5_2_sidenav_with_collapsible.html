@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Materialize Sandbox</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s12">
+      <h1 class="center-align">SideNav With Collapsible</h1>
+    </div>
+  </div>
+  <div class="container">
+    
+    <br>
+
+    
+    <!-- SIDENAV -->
+
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/img3.jpg">
+          </div>
+          <a href="#!">
+            <img class="circle" src="img/user.jpg">
+          </a>
+          <a href="#!">
+            <span class="white-text name">Wall-e</span>
+          </a>
+          <a href="#!">
+            <span class="white-text email">wall-e@gmail.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a class="subheader">Accordion Collapse</a>
+      </li>
+      <li>
+
+        <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">group_select</i>My Groups
+        </div>
+        <div class="collapsible-body">
+          <span>This is the first area</span>
+        </div>
+      </li>
+      <li>
+        <!-- pre-select use active class in below div -->
+        <div class="collapsible-header">
+          <i class="material-icons">info</i>Info
+        </div>
+        <div class="collapsible-body">
+          <span>This is the second area</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">help</i>Help
+        </div>
+        <div class="collapsible-body">
+          <span>This is the third area</span>
+        </div>
+      </li>
+    </ul>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Expandable Collapse</a>
+      </li>
+      <li>
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">group_select</i>First
+            </div>
+            <div class="collapsible-body">
+              <span>This is the first area</span>
+            </div>
+          </li>
+          <li>
+            <!-- pre-select -->
+            <div class="collapsible-header active">
+              <i class="material-icons">info</i>Second
+            </div>
+            <div class="collapsible-body">
+              <span>This is the second area</span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">help</i>Third
+            </div>
+            <div class="collapsible-body">
+              <span>This is the third area</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="waves-effect waves-light" href="#!">Logout</a>
+      </li>
+    </ul>
+    <a href="#!" class="button-collapse" data-activates="slide-out">
+      <i class="material-icons">menu</i>
+    </a>
+
+
+    <!-- END HERE -->
+
+
+  </div>
+  <!-- ./ CONTAINER END -->
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // JAVASCRIPT START HERE //
+      $(".button-collapse").sideNav();
+
+
+
+    });
+  </script>
+</body>
+
+</html>
